@@ -1,0 +1,213 @@
+*{
+    font-size: 14pt;
+    font-family: "PT Sans";
+    background-color: white;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+hr{
+    height: 3px;
+    background-color: black;
+}
+h1{
+    font-weight: normal;
+}
+#logo{
+    width: 400px;
+}
+
+.menu{
+    text-align: center; 
+}
+.menu-contents{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#active-page{
+    background-color: yellow;
+    font-weight: bold;
+}
+#inactive-page{
+    background-color: transparent;
+}
+.body-heading{
+    margin-top: 60px;
+}
+#body-heading-text{
+    text-align: center;
+    font-size: 18pt;
+}
+.product-card{
+    margin: auto;
+    margin-bottom: 15px;
+    height: auto;
+    padding: 5px;
+    max-width: 410px;
+    text-align: left;
+    background-color: transparent;
+}
+.product-card:hover{
+    background-color: yellow;
+    font-weight: bold;
+}
+.notbold{
+    background-color: transparent;
+    font-weight: normal;
+}
+.product-image{
+    width: 410px;
+    height: 410px;
+    text-align: center;
+    background-color: transparent;
+}
+.product-name{
+    margin: 0;
+    text-decoration: underline;
+    color:black;
+    background-color: transparent;
+}
+.product-price{
+    margin: 0;
+    color: black;
+    background-color: transparent;
+}
+.product-gallery-image{
+    margin: auto;
+    width: 400px;
+    height: 400px;
+    border: 3px;
+    border-style: solid;
+    border-color: black;
+}
+
+.product-details-card{
+    margin: auto;
+    max-width: 600px;
+    text-align: center;
+    border-width: 5px;
+    border-color: black;
+    background-color: transparent;
+}
+.product-details-image{
+    margin: auto;
+    width: 600px;
+    height: 600px;
+    border: 3px;
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+}
+.product-details-description{
+    margin: auto;
+    text-align: left;
+    width: 240px;
+    margin-bottom: 20px;
+}
+.dropdown-button{
+    width: 240px;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.dropdown-button-label{
+    margin: 0;
+}
+.dropdown-button-box{
+    width: 100%;
+    border: 3px;
+    border-style: solid;
+    border-color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.product-details-buyblock{
+    width: 240px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+#product-details-price{
+    font-weight: bold;
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 18px;
+}
+.add-to-cart-button{
+    background-color: yellow;
+    font-weight: bold;
+    width: 155px;
+    border: 3px;
+    border-style: solid;
+    border-color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.product-cart{
+    margin: auto;
+    width: 800px;
+    height: auto;
+    text-align: center;
+    background-color: transparent;
+}
+.product-cart-card{
+    margin: auto;
+    width: 400px;
+    height: auto;
+    text-align: center;
+    background-color: transparent;
+}
+.product-cart-card-image{
+    width: 200px;
+    height: 200px;
+    border: 3px;
+    border-style: solid;
+    border-color: black;
+}
+.product-cart-card-remove{
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 10pt;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-thickness: 0.5px;
+}
+.product-cart-card-name{
+    margin: 0;
+}
+.product-cart-card-glazing{
+    margin: 0;
+}
+.product-cart-card-packsize{
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.product-cart-card-price{
+    margin-bottom: 40px;
+    font-size: 16pt;
+}
+.product-cart-checkout{
+    text-align: center;
+}
+#product-cart-checkout-price{
+    font-size: 16pt;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.checkout-button{
+    background-color: yellow;
+    font-weight: bold;
+    width: 200px;
+    border: 3px;
+    border-style: solid;
+    border-color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}

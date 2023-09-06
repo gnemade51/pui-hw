@@ -53,10 +53,6 @@ h1{
     background-color: yellow;
     font-weight: bold;
 }
-.notbold{
-    background-color: transparent;
-    font-weight: normal;
-}
 .product-image{
     width: 410px;
     height: 410px;
@@ -71,6 +67,7 @@ h1{
 }
 .product-price{
     margin: 0;
+    font-weight: normal;
     color: black;
     background-color: transparent;
 }

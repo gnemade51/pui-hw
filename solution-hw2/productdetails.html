@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Product Details</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css"/>
+  </head>
+  <body>
+    <header>
+        <a href="./index.html"><img id="logo" src="../assets/logo/logo-01.svg" alt="Bun Bun Bake Shop Logo"/></a>
+        <hr/>
+        <nav class="menu">
+            <div class="menu-contents">
+                <a id="active-page" href="./index.html">PRODUCTS</a>
+            </div>
+            <div class="menu-contents">
+                <a id="inactive-page" href="./productcart.html">CART</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="body-heading">
+                <h1 id="body-heading-text">Original cinnamon rolls</h1>
+            </div>
+            <div class="product-details-card">
+                <img class="product-details-image" src="../assets/products/original-cinnamon-roll.jpg" alt="Original Cinnamon Roll Image"/>
+                <div class="product-details-description">
+                    <p id="product-details-description-content">Customize our delicious, hand-made cinnamon roll to your liking!</p>
+                </div>
+                <div class="dropdown-button"> <!--reference: https://www.w3schools.com/tags/tag_select.asp-->
+                    <p class="dropdown-button-label">Glazing</p>
+                    <select name="glazing" class="dropdown-button-box">
+                        <option value="Keep original">Keep original</option>
+                        <option value="chocolate">Sugar milk</option>
+                        <option value="Vanilla milk">Vanilla milk</option>
+                        <option value="Double chocolate">Double chocolate</option>
+                    </select>
+                </div>
+                <div class="dropdown-button">
+                    <p class="dropdown-button-label">Pack Size</p>
+                    <select name="packsize" class="dropdown-button-box">
+                        <option value="1">1</option>
+                        <option value="3">3</option>
+                        <option value="6">6</option>
+                        <option value="12">12</option>
+                    </select>
+                <div class="product-details-buyblock">
+                    <p id="product-details-price">$ 2.49</p><button class="add-to-cart-button">Add to cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+  </body>
+</html>

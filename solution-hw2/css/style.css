@@ -54,8 +54,8 @@ h1{
     background-color: transparent;
 }
 .body-container{
-    padding-left: 30px;
-    padding-right: 30px;
+    /* padding-left: 30px;
+    padding-right: 30px; */
 }
 .body-heading{
     margin-top: 60px;

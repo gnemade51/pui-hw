@@ -30,7 +30,7 @@ const glazingDict = {
 const packsizeDict = {
     one: {name:'1', value: 1},
     three: {name:'3', value: 3},
-    six: {name:'5', value: 5},
+    six: {name:'6', value: 5},
     twelve: {name:'12', value: 10}
 }
 

@@ -26,22 +26,22 @@ function onSelectGlazingChange() {
     //console.log('You selected Glazing ' + this.value);
     //cinnamon_role.glazingValue = parseFloat(this.value);
     cinnamon_role.glazing = selectGlazing.options[selectGlazing.selectedIndex].text;
-    displayPrice(calcPrice(cinnamon_role))
+    displayPrice(calcPrice(cinnamon_role));
   }
 
 function onSelectPackSizeChange() {
     //console.log('You selected PackSize ' + this.value);
     //cinnamon_role.packsizeValue = parseInt(this.value);
     cinnamon_role.packsize = selectPackSize.options[selectPackSize.selectedIndex].text;
-    displayPrice(calcPrice(cinnamon_role))
+    displayPrice(calcPrice(cinnamon_role));
   }
 
 function onClickAddtoCart() {
-    let roll = new Product(cinnamon_role.type, cinnamon_role.price, cinnamon_role.glazing, cinnamon_role.packsize)
+    let roll = new Product(cinnamon_role.type, cinnamon_role.price, cinnamon_role.glazing, cinnamon_role.packsize);
     roll.glazing = cinnamon_role.glazing;
-    roll.packsize = cinnamon_role.packsize
-    cart.push(roll)
-    console.log(cart)
+    roll.packsize = cinnamon_role.packsize;
+    cart.push(roll);
+    console.log(cart);
 }
 
 const glazingDict = {
@@ -49,14 +49,14 @@ const glazingDict = {
     sugar_milk: {name:'Sugar milk', value: 0},
     vanila_milk: {name:'Vanila milk', value: 0.5},
     double_chocolate: {name:'Double chocolate', value: 1.50}
-}
+};
 
 const packsizeDict = {
     one: {name:'1', value: 1},
     three: {name:'3', value: 3},
     six: {name:'6', value: 5},
     twelve: {name:'12', value: 10}
-}
+};
 
 class Product {
     constructor(type, price, glazing, packsize){
@@ -90,7 +90,7 @@ selectImage.src = '../assets/products/' + productimage;
 
 //Update the price
 let selectPrice = document.querySelector('#product-details-price');
-selectPrice.innerText = '$ ' + cinnamon_role.price
+selectPrice.innerText = '$ ' + cinnamon_role.price;
 
 let selectGlazing = document.querySelector('#glazing');
 let selectPackSize = document.querySelector('#packsize');

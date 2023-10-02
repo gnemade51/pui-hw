@@ -47,7 +47,7 @@ function onClickAddtoCart() {
 const glazingDict = {
     keep_original: {name:'Keep original', value: 0},
     sugar_milk: {name:'Sugar milk', value: 0},
-    vanila_milk: {name:'Vanila milk', value: 0.5},
+    vanilla_milk: {name:'Vanilla milk', value: 0.5},
     double_chocolate: {name:'Double chocolate', value: 1.50}
 };
 

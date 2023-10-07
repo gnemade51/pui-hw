@@ -43,10 +43,6 @@ let prod2 = new Product('Walnut', 3.49, 'Vanilla Milk', '12');
 let prod3 = new Product('Raisin', 2.99, 'Sugar Milk', '3');
 let prod4 = new Product('Apple', 3.49, 'Keep Original', '3');
 
-// const cartSet = new Set();
-// cartSet.add(prod1, prod2, prod3, prod4);
-// console.log(cartSet)
-
 let cart = [];
 let totalPrice = 0;
 cart.push(prod1, prod2, prod3, prod4);
@@ -89,7 +85,6 @@ function updateProduct(product){
     prodGlazingElement.innerText = 'Glazing: ' + product.glazing;
     prodPacksizeElement.innerText = 'Pack Size: ' + product.packsize;
     totalPrice += parseFloat(calcPrice(product));
-    // console.log(totalPrice);
     prodTotalPriceElement.innerText = '$ ' + calcPrice(product);
     updateTotalPrice(totalPrice);
 }
@@ -102,6 +97,5 @@ function updateTotalPrice(totalPrice) {
 updateTotalPrice(totalPrice.toFixed(2));
 
 for (const product of cart) {
-    // console.log(product);
     addProducts(product);
 }

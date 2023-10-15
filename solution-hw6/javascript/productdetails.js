@@ -57,7 +57,8 @@ function retrieveFromLocalStorage() {
     }
     console.log(cartString);
 }
-  
+
+//save data to storage
 function saveToLocalStorage() {
     const cartString = JSON.stringify(cart);
     localStorage.setItem('storedCart', cartString);

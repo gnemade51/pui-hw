@@ -65,18 +65,21 @@ function updateTotalPrice(totalPrice) {
     finalCartPrice.innerText = '$ ' + Math.abs(totalPrice).toFixed(2);
 }
 
+//Retrieve stored data (from PUI lab 6)
 function retrieveFromLocalStorage() {
     const cartString = localStorage.getItem('storedCart');
     const cartArray = JSON.parse(cartString);
     for (const productData of cartArray) {
         cart.push(productData);
     }
-    console.log(cart);
+    console.log(cartString);
 }
 
+//save data to storage
 function saveToLocalStorage() {
     const cartString = JSON.stringify(cart);
     localStorage.setItem('storedCart', cartString);
+    console.log(cartString);
 }
 
 let cart = [];

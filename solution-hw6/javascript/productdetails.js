@@ -48,18 +48,20 @@ function onClickAddtoCart() {
     saveToLocalStorage();
 }
 
+//Retrieve stored data (from PUI lab 6)
 function retrieveFromLocalStorage() {
     const cartString = localStorage.getItem('storedCart');
     const cartArray = JSON.parse(cartString);
     for (const productData of cartArray) {
         cart.push(productData);
     }
-    console.log(cart);
+    console.log(cartString);
 }
   
 function saveToLocalStorage() {
     const cartString = JSON.stringify(cart);
     localStorage.setItem('storedCart', cartString);
+    console.log(cartString);
 }
 
 const queryString = window.location.search;

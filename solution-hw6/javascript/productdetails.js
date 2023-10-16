@@ -74,7 +74,7 @@ let productimage = rolls[rollType].imageFile;
 
 let cart = [];
 
-let cinnamon_role = new Product(rollType, productprice, 'Keep Original', '1');
+let cinnamon_role = new Product(rollType, productprice, 'Keep original', '1');
 
 //Update the heading
 let selectHeader = document.querySelector('#body-heading-text');

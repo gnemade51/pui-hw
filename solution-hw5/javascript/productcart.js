@@ -38,10 +38,10 @@ function calcPrice(product) {
     return finalPrice.toFixed(2);
 }
 
-let prod1 = new Product('Original', 2.49, 'Sugar Milk', '1');
-let prod2 = new Product('Walnut', 3.49, 'Vanilla Milk', '12');
-let prod3 = new Product('Raisin', 2.99, 'Sugar Milk', '3');
-let prod4 = new Product('Apple', 3.49, 'Keep Original', '3');
+let prod1 = new Product('Original', 2.49, 'Sugar milk', '1');
+let prod2 = new Product('Walnut', 3.49, 'Vanilla milk', '12');
+let prod3 = new Product('Raisin', 2.99, 'Sugar milk', '3');
+let prod4 = new Product('Apple', 3.49, 'Keep original', '3');
 
 let cart = [];
 let totalPrice = 0;

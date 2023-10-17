@@ -7,6 +7,7 @@ class Product {
     }
 };
 
+//calculate price for a product
 function calcPrice(product) {
     let glazingValue = 0;
     let packsizeValue = 1;
@@ -24,21 +25,25 @@ function calcPrice(product) {
     return finalPrice.toFixed(2);
 }
 
+//update final price element in UI
 function displayPrice(finalPrice) {
     let priceElement = document.querySelector('#product-details-price');
     priceElement.innerText = "$ " + finalPrice;
 }
 
+//set object glazing to selected glazing option
 function onSelectGlazingChange() {
     cinnamon_role.glazing = selectGlazing.options[selectGlazing.selectedIndex].text;
     displayPrice(calcPrice(cinnamon_role));
 }
 
+//set object packsize to selected packsize option
 function onSelectPackSizeChange() {
     cinnamon_role.packsize = selectPackSize.options[selectPackSize.selectedIndex].text;
     displayPrice(calcPrice(cinnamon_role));
 }
 
+//create new object and push to cart
 function onClickAddtoCart() {
     let roll = new Product(cinnamon_role.type, cinnamon_role.price, cinnamon_role.glazing, cinnamon_role.packsize);
     roll.glazing = cinnamon_role.glazing;

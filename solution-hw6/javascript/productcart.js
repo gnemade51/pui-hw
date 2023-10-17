@@ -7,6 +7,7 @@ class Product {
     }
 };
 
+//calculate price for a product
 function calcPrice(product) {
     let glazingValue = 0;
     let packsizeValue = 1;
@@ -24,6 +25,7 @@ function calcPrice(product) {
     return finalPrice.toFixed(2);
 }
 
+//add product to the UI
 function addProducts(product){
     const template = document.querySelector('#product_cart-card_template');
     const clone = template.content.cloneNode(true);
@@ -35,6 +37,7 @@ function addProducts(product){
     updateProduct(product);
 }
 
+//delete product from UI and cart array
 function deleteProduct(product) {
     totalPrice -= parseFloat(calcPrice(product));
     updateTotalPrice(totalPrice);
@@ -44,6 +47,7 @@ function deleteProduct(product) {
     saveToLocalStorage();
 }
 
+//update UI elements for the product
 function updateProduct(product){
     const prodImageElement = product.element.querySelector('.product-cart-card-image');
     const prodNameElement = product.element.querySelector('.product-cart-card-name');
@@ -60,6 +64,7 @@ function updateProduct(product){
     updateTotalPrice(totalPrice);
 }
 
+//update final price element in UI
 function updateTotalPrice(totalPrice) {
     const finalCartPrice = document.querySelector('.product-cart-checkout-price');
     finalCartPrice.innerText = '$ ' + Math.abs(totalPrice).toFixed(2);

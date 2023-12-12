@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS Stylesheets -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="css/recipe_page.css">
+        <!-- Javascripts -->
+        <script defer src="./javascript/data.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script defer src="./javascript/recipe_page.js"></script>
+        <!-- Title -->
+        <title>QuickBites</title>
+    </head>
+
+    <body>
+        <header class="header">
+            <a href="./index.html">
+                <h4>QuickBites</h4>
+            </a>
+            <div class="link">
+                <a class="back_button" href="./index.html" title="Home"><img class="back_button_image"
+                        src="./assets/Back_Button.svg" alt="back button"></a>
+            </div>
+        </header>
+        <div class="overlay_canvas">
+            <h1 class="recipe_title">CHICKEN BACON BROCCOLI ALFREDO</h1>
+            <div class="ingredient_box">
+                <p id="ingredient_title">Ingredients</p>
+                <div class="ingredientItems"></div>
+            </div>
+            <div class="card-slider">
+                <div class="card-slider_wrapper swiper-wrapper">
+                    <template id="card-template">
+                        <div class="card-slider_item swiper-slide">
+                            <div class="card-slider_step">
+                                <p class="step">Step 1: Heat oil in a pan.</p>
+                            </div>
+                            <div class="gas_container">
+                                <div class="heat">
+                                    <p class="heat_label">Heat</p>
+                                    <img id="heat_image" src="assets/recipe_1/heat_1.png" alt="maximum heat">
+                                </div>
+                                <div class="pan">
+                                    <img id="recipe_image" src="assets/recipe_1/recipe_1.svg"
+                                        alt="image of oil added to the pan">
+                                </div>
+                                <div class="time">
+                                    <p class="time_label">Time</p>
+                                    <img id="time_image" src="assets/recipe_1/time_1.png" alt="five minutes">
+                                </div>
+                            </div>
+                        </div>
+                    </template>
+
+                    <template id="final-card-template">
+                        <div class="card-slider_item swiper-slide">
+                            <div class="gas_container">
+                                <div class="pan">
+                                    <img id="last_recipe" src="assets/recipe_1/recipe_11.svg"
+                                        alt="image of spaghetti added to the pan">
+                                </div>
+                            </div>
+                            <h1 class="recipe_end_title">VOILA! YOU ARE DONE</h1>
+                        </div>
+                    </template>
+                </div>
+                <div class="card_slider_pagination"> </div>
+            </div>
+        </div>
+    </body>
+
+</html>

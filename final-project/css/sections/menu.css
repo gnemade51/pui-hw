@@ -1,0 +1,120 @@
+.menu {
+	padding: 64px;
+	display: flex;
+	flex-direction: column;
+	background-color: var(--primary-color);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	overflow: hidden;
+}
+
+.menu_title {
+	font-size: 56px;
+	font-family: var(--playfair-display);
+	font-weight: 600;
+	line-height: 78px;
+	color: black;
+	text-align: center;
+}
+
+.menu_catalogue {
+	margin-top: 64px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	gap: 56px;
+}
+
+.menu_button {
+	width: fit-content;
+	padding: 20px 30px;
+	margin: 80px auto 0;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 23px;
+	font-family: var(--plus-jakarta-sans);
+	color: #fff;
+	border: none;
+	outline: none;
+	background: var(--secondary-color);
+	border-radius: 64px;
+	cursor: pointer;
+}
+
+.menu_card {
+	padding: 38px;
+	width: 260px;
+	height: fit-content;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+
+	border-radius: 36px;
+	background: rgba(255, 255, 255, 0.05);
+	border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.menu_card:hover {
+	background: #fff;
+	text-decoration: none;
+}
+
+.menu_card:hover .menu_card-title {
+	color: var(--secondary-color);
+}
+
+.menu_card:hover .menu_card-rating p {
+	color: var(--secondary-color);
+}
+
+.menu_card-image {
+	width: 230px;
+	height: 230px;
+	object-fit: contain;
+}
+
+.menu_card-title {
+	margin-top: 47px;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 32px;
+	font-family: var(--playfair-display);
+	color: black;
+	text-align: center;
+}
+
+.menu_card-details {
+	width: 100%;
+	margin-top: 32px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.menu_card-rating {
+	display: flex;
+	align-items: flex-start;
+	gap: 8px;
+}
+
+.menu_card-rating img {
+	width: 24px;
+	height: 24px;
+	object-fit: contain;
+}
+
+.menu_card-rating p {
+	font-size: 20px;
+	font-weight: 300;
+	font-family: var(--plus-jakarta-sans);
+	color: #fff;
+}
+
+.menu_card-price {
+	font-size: 20px;
+	font-weight: 500;
+	font-family: var(--plus-jakarta-sans);
+	color: #fff;
+}
